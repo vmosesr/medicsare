@@ -1,0 +1,215 @@
+:root {
+    --primary: #2c6ba0;
+    --secondary: #5cc9f5;
+    --accent: #00a896;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 12px 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--dark);
+    transition: all 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--primary);
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: #235686;
+    border-color: #235686;
+}
+
+.btn-outline-primary {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+.hero {
+    background: linear-gradient(135deg, rgba(44, 107, 160, 0.9) 0%, rgba(92, 201, 245, 0.9) 100%), url('/api/placeholder/1920/1080') center/cover no-repeat;
+    color: white;
+    padding: 6rem 0;
+    position: relative;
+}
+
+.feature-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 4rem;
+}
+
+.testimonial-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.quote-icon {
+    font-size: 2rem;
+    color: #e0e0e0;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--secondary);
+}
+
+.stats-box {
+    background-color: var(--light);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.stats-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.stats-label {
+    color: var(--dark);
+    font-weight: 500;
+}
+
+.cta-section {
+    background-color: var(--primary);
+    color: white;
+    padding: 4rem 0;
+}
+
+footer {
+    background-color: #182f45;
+    color: white;
+    padding: 3rem 0 1rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    color: white;
+    transition: all 0.3s;
+}
+
+.social-icon:hover {
+    background-color: var(--secondary);
+    color: var(--dark);
+}
+
+.login-modal .modal-content {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.login-modal .modal-header {
+    background-color: var(--primary);
+    color: white;
+    border-bottom: none;
+}
+
+.login-modal .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+.floating-appointment {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--accent);
+    color: white;
+    border-radius: 50px;
+    padding: 12px 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: all 0.3s;
+}
+
+.floating-appointment:hover {
+    background-color: #008f7e;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 4rem 0;
+    }
+    
+    .feature-card, .testimonial-card, .stats-box {
+        margin-bottom: 1.5rem;
+    }
+}

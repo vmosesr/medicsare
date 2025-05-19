@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare - Advanced Hospital Management System</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-heartbeat me-2"></i>Medicsare
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Departments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-3 mt-3 mt-lg-0">
+                    <button class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-primary">Register</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Advanced Hospital Management System</h1>
+                    <p class="lead mb-4">Streamline your healthcare operations with our comprehensive, user-friendly hospital management solution. Designed for efficiency, security, and patient satisfaction.</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <button class="btn btn-light btn-lg me-2">
+                            <i class="fas fa-play-circle me-2"></i>Watch Demo
+                        </button>
+                        <button class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-calendar-check me-2"></i>Schedule Consultation
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="pexels-n-voitkevich-7172830.jpg" alt="Hospital Dashboard" class="img-fluid rounded-4 shadow-lg mt-4 mt-lg-0">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-primary text-uppercase fw-bold">Core Features</h6>
+                <h2 class="display-5 fw-bold">Comprehensive Healthcare Management</h2>
+                <p class="lead text-muted mx-auto" style="max-width: 600px;">Our hospital management system provides all the tools you need to run your healthcare facility efficiently.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card p-4 bg-white">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h5 class="fw-bold">Doctor Management</h5>
+                        <p class="text-muted mb-0">Efficiently manage doctor schedules, specialties, and patient assignments with our intuitive interface.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card p-4 bg-white">
+                        <div class="feature-icon">
+                            <i class="fas fa-procedures"></i>
+                        </div>
+                        <h5 class="fw-bold">Patient Records</h5>
+                        <p class="text-muted mb-0">Keep complete patient histories, treatment plans, and medical records securely stored and easily accessible.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card p-4 bg-white">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h5 class="fw-bold">Appointment System</h5>
+                        <p class="text-muted mb-0">Streamline scheduling with our automated appointment booking system with reminders and notifications.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card p-4 bg-white">
+                        <div class="feature-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h5 class="fw-bold">Laboratory Integration</h5>
+                        <p class="text-muted mb-0">Connect lab results directly to patient records with our seamless laboratory management system.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card p-4 bg-white">
+                        <div class="feature-icon">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <h5 class="fw-bold">Pharmacy Management</h5>
+                        <p class="text-muted mb-0">Track medication inventory, prescriptions, and automate reordering with our pharmacy module.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card p-4 bg-white">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h5 class="fw-bold">Analytics Dashboard</h5>
+                        <p class="text-muted mb-0">Make data-driven decisions with comprehensive analytics and reporting tools.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="stats-box">
+                        <div class="stats-number">500+</div>
+                        <div class="stats-label">Hospitals</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stats-box">
+                        <div class="stats-number">12,000+</div>
+                        <div class="stats-label">Healthcare Providers</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stats-box">
+                        <div class="stats-number">99.9%</div>
+                        <div class="stats-label">Uptime</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stats-box">
+                        <div class="stats-number">5M+</div>
+                        <div class="stats-label">Patients Managed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-primary text-uppercase fw-bold">Testimonials</h6>
+                <h2 class="display-5 fw-bold">What Our Clients Say</h2>
+                <p class="lead text-muted mx-auto" style="max-width: 600px;">Healthcare professionals trust our system to manage their facilities efficiently.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="quote-icon mb-3">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="mb-4">"The MediCare system transformed our hospital operations. Patient care has improved significantly and administrative tasks are now much more efficient."</p>
+                        <div class="d-flex align-items-center">
+                            <img src="ben-den-engelsen-YUu9UAcOKZ4-unsplash.jpg" alt="Avatar" class="avatar me-3">
+                            <div>
+                                <h6 class="mb-0 fw-bold">Dr. Sarah Johnson</h6>
+                                <small class="text-muted">Medical Director, City Hospital</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="quote-icon mb-3">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="mb-4">"The analytics dashboard gives us insights we never had before. We've been able to optimize staff scheduling and reduce wait times by 40%."</p>
+                        <div class="d-flex align-items-center">
+                            <img src="pexels-olly-774909.jpg" alt="Avatar" class="avatar me-3">
+                            <div>
+                                <h6 class="mb-0 fw-bold">James Wilson</h6>
+                                <small class="text-muted">Hospital Administrator, Memorial Healthcare</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="quote-icon mb-3">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="mb-4">"Patient satisfaction scores have increased by 35% since implementing MediCare. The appointment system alone has revolutionized our practice."</p>
+                        <div class="d-flex align-items-center">
+                            <img src="pexels-andrewperformance1-697509.jpg" alt="Avatar" class="avatar me-3">
+                            <div>
+                                <h6 class="mb-0 fw-bold">Dr. Michelle Rodriguez</h6>
+                                <small class="text-muted">Chief of Medicine, Bayside Clinic</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2 class="display-5 fw-bold mb-3">Ready to transform your healthcare facility?</h2>
+                    <p class="lead mb-0">Join hundreds of healthcare providers who trust MediCare for their hospital management needs.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <button class="btn btn-light btn-lg">Request Demo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="mb-4">
+                        <i class="fas fa-heartbeat me-2"></i>MediCare
+                    </h4>
+                    <p>Advanced hospital management system designed to streamline healthcare operations and improve patient care through technology.</p>
+                    <div class="d-flex mt-4">
+                        <a href="#" class="social-icon me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon me-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <h5 class="mb-4">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News & Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <h5 class="mb-4">Products</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Integrations</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <h5 class="mb-4">Resources</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">Support Center</a></li>
+                        <li><a href="#">Partners</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <h5 class="mb-4">Contact</h5>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-envelope me-2"></i>info@medicare.com</a></li>
+                        <li><a href="#"><i class="fas fa-phone me-2"></i>(123) 456-7890</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt me-2"></i>123 Healthcare St, Medical City</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3 opacity-25">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2025 MediCare. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3">Privacy Policy</a>
+                    <a href="#" class="text-white me-3">Terms of Service</a>
+                    <a href="#" class="text-white">Compliance</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Appointment Button -->
+    <a href="#" class="floating-appointment text-decoration-none">
+        <i class="fas fa-calendar-plus me-2"></i>Book Appointment
+    </a>
+
+    <!-- Login Modal -->
+    <div class="modal fade login-modal" id="loginModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login to MediCare</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Sign In</button>
+                        </div>
+                        <div class="text-center mt-3">
+                            <a href="#" class="text-decoration-none">Forgot password?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
