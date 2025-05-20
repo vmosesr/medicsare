@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare - Advanced Hospital Management System</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style.css">
+    
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-heartbeat me-2"></i>Medicsare
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doctors.html">Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="departments.html">Departments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-3 mt-3 mt-lg-0">
+                    <button class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-primary">Register</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="services hero">
+        <div class="services container">
+            <div class="services hero-content">
+                <h1>Comprehensive Healthcare Services</h1>
+                <p>Our team of expert professionals provides a wide range of medical services using state-of-the-art technology to ensure the best care for our patients.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="services container">
+            <h2 class="services section-title">Our Core Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Cardiology</h3>
+                        <p>Comprehensive heart care services including diagnostics, treatment, and preventive care by our experienced cardiologists.</p>
+                        <a href="#" class="services btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Neurology</h3>
+                        <p>Advanced neurological services for diagnosis and treatment of conditions affecting the brain, spinal cord, and nervous system.</p>
+                        <a href="#" class="services btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-x-ray"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Radiology</h3>
+                        <p>State-of-the-art imaging services including X-rays, MRI, CT scans, and ultrasound for accurate diagnosis.</p>
+                        <a href="#" class="services btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-procedures"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Surgery</h3>
+                        <p>Advanced surgical procedures performed by expert surgeons using minimally invasive techniques when possible.</p>
+                        <a href="#" class="services btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Pediatrics</h3>
+                        <p>Comprehensive healthcare services for children from birth through adolescence, focusing on growth and development.</p>
+                        <a href="#" class="services btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Pharmacy</h3>
+                        <p>Full-service pharmacy providing prescribed medications, consultations, and medication management services.</p>
+                        <a href="#" class="services btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Section with Tabs -->
+    <section class="specialties">
+        <div class="services container">
+            <h2 class="services section-title">Our Specialties</h2>
+            
+            <div class="specialty-tabs">
+                <button class="tab-btn active" data-tab="cardiology">Cardiology</button>
+                <button class="tab-btn" data-tab="orthopedics">Orthopedics</button>
+                <button class="tab-btn" data-tab="oncology">Oncology</button>
+                <button class="tab-btn" data-tab="neurology">Neurology</button>
+            </div>
+            
+            <div class="tab-content active" id="cardiology">
+                <img src="/images/ben-den-engelsen-YUu9UAcOKZ4-unsplash.jpg" alt="Cardiology Department">
+                <div class="tab-text">
+                    <h3>Advanced Cardiac Care</h3>
+                    <p>Our cardiology department provides comprehensive diagnosis and treatment of heart conditions using the latest technology and evidence-based approaches.</p>
+                    <ul>
+                        <li>Non-invasive cardiac testing</li>
+                        <li>Cardiac catheterization</li>
+                        <li>Electrophysiology studies</li>
+                        <li>Pacemaker implantation</li>
+                        <li>Cardiac rehabilitation programs</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="orthopedics">
+                <img src="/images/pexels-andrewperformance1-697509.jpg" alt="Orthopedics Department">
+                <div class="tab-text">
+                    <h3>Comprehensive Orthopedic Services</h3>
+                    <p>Our orthopedic specialists diagnose and treat conditions affecting the musculoskeletal system, including bones, joints, ligaments, tendons, and muscles.</p>
+                    <ul>
+                        <li>Joint replacement surgery</li>
+                        <li>Sports medicine</li>
+                        <li>Spine surgery</li>
+                        <li>Fracture care</li>
+                        <li>Physical therapy programs</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="oncology">
+                <img src="/images/pexels-n-voitkevich-7172830.jpg" alt="Oncology Department">
+                <div class="tab-text">
+                    <h3>Comprehensive Cancer Care</h3>
+                    <p>Our oncology department offers personalized cancer treatment plans using the latest advances in cancer care to provide the best possible outcomes for our patients.</p>
+                    <ul>
+                        <li>Medical oncology</li>
+                        <li>Radiation oncology</li>
+                        <li>Surgical oncology</li>
+                        <li>Hematology services</li>
+                        <li>Cancer support services</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="neurology">
+                <img src="/images/pexels-olly-774909.jpg" alt="Neurology Department">
+                <div class="tab-text">
+                    <h3>Advanced Neurological Care</h3>
+                    <p>Our neurology department specializes in the diagnosis and treatment of disorders affecting the nervous system, including the brain, spinal cord, and peripheral nerves.</p>
+                    <ul>
+                        <li>Neurological diagnostics</li>
+                        <li>Epilepsy monitoring</li>
+                        <li>Stroke care and rehabilitation</li>
+                        <li>Movement disorders treatment</li>
+                        <li>Headache and pain management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insurance Section -->
+    <section class="insurance">
+        <div class="services container">
+            <h2 class="services section-title">Insurance Partners</h2>
+            <div class="insurance-content">
+                <div class="insurance-text">
+                    <h3>We Accept Major Insurance Plans</h3>
+                    <p>Medicare works with a wide range of insurance providers to ensure our patients receive the care they need without financial worry. Our billing department is available to help you understand your coverage and options.</p>
+                    <p>If you don't see your insurance provider listed, please contact our billing office to discuss your specific situation and available options.</p>
+                </div>
+                <div class="insurance-logos">
+                    <div class="insurance-logo">Insurance A</div>
+                    <div class="insurance-logo">Insurance B</div>
+                    <div class="insurance-logo">Insurance C</div>
+                    <div class="insurance-logo">Insurance D</div>
+                    <div class="insurance-logo">Insurance E</div>
+                    <div class="insurance-logo">Insurance F</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section class="services appointment">
+        <div class="services container">
+            <h2>Ready to Schedule an Appointment?</h2>
+            <p>Our team is ready to provide you with the care you need. Schedule an appointment today to discuss your health concerns with our specialists.</p>
+            <a href="#" class="services btn btn-light">Book an Appointment</a>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2 class="display-5 fw-bold mb-3">Ready to transform your healthcare facility?</h2>
+                    <p class="lead mb-0">Join hundreds of healthcare providers who trust MediCare for their hospital management needs.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <button class="btn btn-light btn-lg">Request Demo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="mb-4">
+                        <i class="fas fa-heartbeat me-2"></i>MediCare
+                    </h4>
+                    <p>Advanced hospital management system designed to streamline healthcare operations and improve patient care through technology.</p>
+                    <div class="d-flex mt-4">
+                        <a href="#" class="social-icon me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon me-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <h5 class="mb-4">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News & Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <h5 class="mb-4">Products</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Integrations</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <h5 class="mb-4">Resources</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">Support Center</a></li>
+                        <li><a href="#">Partners</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <h5 class="mb-4">Contact</h5>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-envelope me-2"></i>info@medicare.com</a></li>
+                        <li><a href="#"><i class="fas fa-phone me-2"></i>(123) 456-7890</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt me-2"></i>123 Healthcare St, Medical City</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3 opacity-25">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2025 MediCare. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3">Privacy Policy</a>
+                    <a href="#" class="text-white me-3">Terms of Service</a>
+                    <a href="#" class="text-white">Compliance</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Appointment Button -->
+    <a href="#" class="floating-appointment text-decoration-none">
+        <i class="fas fa-calendar-plus me-2"></i>Book Appointment
+    </a>
+
+    <!-- Login Modal -->
+    <div class="modal fade login-modal" id="loginModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login to MediCare</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Sign In</button>
+                        </div>
+                        <div class="text-center mt-3">
+                            <a href="#" class="text-decoration-none">Forgot password?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/script.js"></script>
+
+</body>
+</html>

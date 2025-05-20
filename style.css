@@ -213,3 +213,296 @@ footer {
         margin-bottom: 1.5rem;
     }
 }
+
+
+
+
+
+/* SERVICES PAGE ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* SERVICES PAGE ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* SERVICES PAGE ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* SERVICES PAGE ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* SERVICES PAGE ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* SERVICES PAGE ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* SERVICES PAGE ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* SERVICES PAGE ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* SERVICES PAGE ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* SERVICES PAGE ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* SERVICES PAGE ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* SERVICES PAGE ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* SERVICES PAGE ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* SERVICES PAGE ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+
+.services.hero {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 8rem 0 4rem;
+    text-align: center;
+}
+
+.services.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.services.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.services.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.services-section {
+    padding: 5rem 0;
+}
+
+.services.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--primary);
+    position: relative;
+}
+
+.services.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--accent);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+    background-color: var(--light);
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 3px solid var(--secondary);
+}
+
+.service-icon i {
+    font-size: 3rem;
+    color: var(--primary);
+}
+
+.service-content {
+    padding: 1.5rem;
+}
+
+.service-content h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.service-content p {
+    margin-bottom: 1.5rem;
+    color: var(--dark);
+}
+
+.services.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.services.btn-primary {
+    background-color: var(--primary);
+    color: white;
+}
+
+.services.btn-primary:hover {
+    background-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.specialties {
+    background-color: var(--light);
+    padding: 5rem 0;
+}
+
+.specialty-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.tab-btn {
+    padding: 0.8rem 1.5rem;
+    background-color: white;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active, .tab-btn:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+.tab-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: none;
+}
+
+.tab-content.active {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tab-content img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tab-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.tab-text h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.tab-text ul {
+    margin-left: 1.5rem;
+}
+
+.tab-text li {
+    margin-bottom: 0.5rem;
+}
+
+.insurance {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.insurance-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.insurance-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.insurance-text h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.insurance-logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    flex: 1;
+    min-width: 300px;
+}
+
+.insurance-logo {
+    background-color: var(--light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.insurance-logo:hover {
+    transform: scale(1.05);
+}
+
+.services.appointment {
+    background: linear-gradient(135deg, var(--secondary), var(--primary));
+    padding: 5rem 0;
+    color: white;
+    text-align: center;
+}
+
+.services.appointment h2 {
+    margin-bottom: 1.5rem;
+}
+
+.services.appointment p {
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services.btn-light {
+    background-color: white;
+    color: var(--primary);
+}
+
+.services.btn-light:hover {
+    background-color: var(--light);
+    transform: translateY(-2px);
+}
+
+
+@media screen and (max-width: 768px) {
+    .services.hero h1 {
+        font-size: 2rem;
+    }
+
+    .specialty-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab-content.active {
+        flex-direction: column;
+    }
+
+    .tab-content img {
+        order: -1;
+    }
+}
